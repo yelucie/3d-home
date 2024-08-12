@@ -1,2 +1,2 @@
-# 3d-home
-3D home using Spline scenes: the user can interact with the scene.
+## 3D Home Project
+Interactive app using Spline 3D Scene, React Next.JS and TailwindCSS.
