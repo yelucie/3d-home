@@ -1,0 +1,33 @@
+.wrapper {
+  position: absolute;
+  width: 91px;
+  height: 113px;
+  z-index: 2;
+  top: 54%;
+  left: -32px;
+}
+
+.image {
+  width: 91px;
+  height: 113px;
+  margin: 0;
+  cursor: pointer;
+}
+
+.icon {
+  position: absolute;
+  top: 36px;
+  left: 36px;
+  margin: auto;
+  transform: scale(0.5);
+  cursor: pointer;
+}
+
+@media (max-width: 1400px) {
+  .wrapper {
+    top: -44px;
+    left: 50%;
+    margin-left: -50px;
+    transform: rotate(90deg);
+  }
+}
