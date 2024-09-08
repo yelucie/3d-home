@@ -5,7 +5,6 @@ import styles from './CloseButton.module.css';
 import Close from '@/public/buttons/close-button.png';
 import CloseIcon from '@/public/buttons/close-icon.png';
 
-
 interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   onClick: () => void;
   isOpen: boolean;
