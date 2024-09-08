@@ -1,10 +1,11 @@
 'use client';
 
 import { useState } from 'react';
-import SplineContainer from './ui/Containers/SplineContainer/SplineContainer';
-import CloseButton from './ui/CloseButton/CloseButton';
-import SplineScene from './ui/SplineScene/SplineScene';
-import DescriptiveContainer from './ui/Containers/DescriptiveContainer/DescriptiveContainer';
+import SplineContainer from '@/app/ui/Spline/SplineContainer/SplineContainer';
+import CloseButton from '@/app/ui/Spline/CloseButton/CloseButton';
+import SplineScene from '@/app/ui/Spline/SplineScene/SplineScene';
+import DescriptiveContainer from '@/app/ui/Description/DescriptiveContainer/DescriptiveContainer';
+import DescriptiveText from '@/app/ui/Description/DescriptiveText/DescriptiveText';
 
 export default function Home() {
   const [isOpen, setIsOpen] = useState(false);
@@ -12,7 +13,7 @@ export default function Home() {
   return (
     <main>
       <DescriptiveContainer>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        <DescriptiveText />
       </DescriptiveContainer>
       <SplineContainer isOpen={isOpen}>
         <CloseButton onClick={() => setIsOpen(!isOpen)} isOpen={isOpen} />

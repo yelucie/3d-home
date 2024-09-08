@@ -1,0 +1,12 @@
+.wrapper {
+  display: grid;
+  gap: 24px;
+  max-width: 460px;
+  padding: 225px 0px 0px 56px;
+}
+
+@media (max-width: 560px) {
+  .wrapper {
+    padding: 145px 20px 0px;
+  }
+}
