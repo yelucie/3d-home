@@ -6,3 +6,8 @@ body {
   margin: 0;
   background-color: #eae7f0;
 }
+
+main {
+  width: 100%;
+  overflow: hidden;
+}
