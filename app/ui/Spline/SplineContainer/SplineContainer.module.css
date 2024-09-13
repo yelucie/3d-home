@@ -1,10 +1,7 @@
 .wrapper {
   position: relative;
   margin: 24px 20px 24px 0px;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
+  inset:0;
   overflow: auto;
   border-radius: 20px;
 }
@@ -15,11 +12,6 @@
   border-radius: 0px;
 }
 
-.closeButton {
-  top: 54%;
-  left: -32px;
-}
-
 @media (max-width: 1400px) {
   .wrapper {
     margin: 0px 20px 10px;
@@ -27,12 +19,5 @@
 
   .wrapper.open {
     margin: 0px;
-  }
-
-  .closeButton {
-    top: -44px;
-    left: 50%;
-    margin-left: -50px;
-    transform: rotate(90deg);
   }
 }

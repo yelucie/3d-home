@@ -12,9 +12,9 @@ interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
 
 export default function CloseButton({ onClick, isOpen }: ButtonProps) {
   return (
-    <button className={styles.wrapper} onClick={onClick} >
+    <button type="button" className={styles.wrapper} onClick={onClick}>
       <Image className={styles.image} src={Close} alt="Close Button" />
-      { isOpen && (
+      {isOpen && (
         <Image
           className={styles.icon}
           src={CloseIcon}

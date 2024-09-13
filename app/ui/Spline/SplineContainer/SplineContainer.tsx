@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './SplineContainer.module.css';
 
-interface SplineSceneProps {
+interface SplineContainerProps {
   children: React.ReactNode;
   isOpen: boolean;
 }
@@ -9,7 +9,7 @@ interface SplineSceneProps {
 export default function SplineContainer({
   children,
   isOpen,
-}: SplineSceneProps) {
+}: SplineContainerProps) {
   const wrapperClass = isOpen
     ? `${styles.wrapper} ${styles.open}`
     : `${styles.wrapper}`;
