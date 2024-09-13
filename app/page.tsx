@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import styles from '@/app/page.module.css';
 import SplineContainer from '@/app/ui/Spline/SplineContainer/SplineContainer';
 import CloseButton from '@/app/ui/Spline/CloseButton/CloseButton';
 import SplineScene from '@/app/ui/Spline/SplineScene/SplineScene';
@@ -15,8 +16,8 @@ export default function Home() {
 
   return (
     <main>
-      <div className="content">
-        <div className="description">
+      <div className={styles.content}>
+        <div className={styles.description}>
           <DescriptiveContainer>
             <DescriptiveText />
           </DescriptiveContainer>
