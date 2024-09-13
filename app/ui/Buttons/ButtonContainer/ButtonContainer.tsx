@@ -10,11 +10,11 @@ export default function ButtonContainer({ onClick }: ButtonContainerProps) {
   return (
     <div className={styles.wrapper}>
       <a href="https://github.com/yelucie/3d-home">
-        <Button className="code" onClick={() => {}}>
+        <Button content="code" onClick={() => {}}>
           Check code
         </Button>
       </a>
-      <Button className={styles.play} onClick={onClick}>
+      <Button content="play" onClick={onClick}>
         Play game
       </Button>
     </div>
