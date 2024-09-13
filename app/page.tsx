@@ -23,10 +23,12 @@ export default function Home() {
           </DescriptiveContainer>
           <ButtonContainer onClick={open} />
         </div>
-        <SplineContainer isOpen={isOpen}>
-          <CloseButton onClick={() => setIsOpen(false)} isOpen={isOpen} />
-          <SplineScene />
-        </SplineContainer>
+        <div className={styles.game}>
+          <SplineContainer isOpen={isOpen}>
+            <CloseButton onClick={() => setIsOpen(false)} isOpen={isOpen} />
+            <SplineScene />
+          </SplineContainer>
+        </div>
       </div>
     </main>
   );

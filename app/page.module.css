@@ -16,4 +16,12 @@
     align-content: center;
     padding-bottom: 40px;
   }
+
+  .game {
+    background: linear-gradient(
+      270deg,
+      #f1f1f1 12.86%,
+      rgba(255, 255, 255, 0) 83.72%
+    );
+  }
 }
